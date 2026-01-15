@@ -118,11 +118,22 @@ p {
 
 .lead {
     font-size: 20px;
-     opacity: 0;
+    opacity: 0;
     animation: fadeIn 2s ease-in forwards;
 }
 
 @keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.lead span {
+    opacity: 0;
+    animation: fadeInSlower 4s ease-in forwards;
+}
+
+@keyframes fadeInSlower {
   to {
     opacity: 1;
   }

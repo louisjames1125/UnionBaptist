@@ -41,36 +41,49 @@ p {
     - the "lead" class is for styling a single paragraph different from that of its surrounding paragraphs
 */
 
+.mtb {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
 .tac {
     text-align: center;
 }
 
 .church-history-list {
-  list-style: none; /* remove default bullets */
-  padding-left: 5rem;
-  width: 50%;
-  margin: 0 auto;
+    list-style: none;
+    /* remove default bullets */
+    padding-left: 5rem;
+    width: 50%;
+    margin: 0 auto;
 }
 
 @media (max-width: 1200px) {
-  .church-history-list {
-    width: 60%;      
-    /* padding-left: 10rem; */
-  }
+    .church-history-list {
+        width: 60%;
+        /* padding-left: 10rem; */
+    }
 }
 
 .church-history-list li {
-  display: flex;           /* make the bullet and text align horizontally */
-  align-items: center;     /* vertical alignment of bullet with text */
-  margin-bottom: 1rem;
+    display: flex;
+    /* make the bullet and text align horizontally */
+    align-items: center;
+    /* vertical alignment of bullet with text */
+    margin-bottom: 1rem;
 }
 
 .church-history-list li::before {
-  content: "•";            /* the bullet */
-  color: #007bff;          /* bullet color */
-  font-size: 1.2rem;       /* bullet size */
-  margin-right: 1rem;      /* space between bullet and text */
-  flex-shrink: 0;          /* prevent bullet from shrinking */
+    content: "•";
+    /* the bullet */
+    color: #007bff;
+    /* bullet color */
+    font-size: 1.2rem;
+    /* bullet size */
+    margin-right: 1rem;
+    /* space between bullet and text */
+    flex-shrink: 0;
+    /* prevent bullet from shrinking */
 }
 
 .container {
@@ -123,9 +136,9 @@ p {
 }
 
 @keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
+    to {
+        opacity: 1;
+    }
 }
 
 .lead span {
@@ -134,9 +147,9 @@ p {
 }
 
 @keyframes fadeInSlower {
-  to {
-    opacity: 1;
-  }
+    to {
+        opacity: 1;
+    }
 }
 
 .btn {
@@ -261,7 +274,9 @@ p {
 #home-showcase .home-showcase-content p {
     padding-bottom: 20px;
     line-height: 1.7em;
-    text-shadow: 0 2px 8px rgba(0,0,0,0.9);  background: rgba(0, 0, 0, 0.15);  padding: 2rem 3rem;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.15);
+    padding: 2rem 3rem;
     border-radius: 8px;
     margin: 2rem 0;
 }
@@ -361,54 +376,54 @@ p {
 
 /* General Styles */
 #gallery {
-  padding: 40px 0;
-  background-color: #333;
+    padding: 40px 0;
+    background-color: #333;
 }
 
 #gallery .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .gallery-title {
-  text-align: center;
-  font-size: 2rem;
-  color: white;
-  margin-bottom: 30px;
-  font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 30px;
+    font-weight: bold;
 }
 
 /* Gallery Layout */
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 15px;
-  justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    justify-items: center;
 }
 
 /* Gallery Item */
 .gallery-item {
-  position: relative;
-  overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
 }
 
 .gallery-item img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
 }
 
 .gallery-item:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .gallery-item:hover img {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 
@@ -514,18 +529,18 @@ p {
 /* Contact Showcase */
 
 #contact-showcase {
-    background: url('../img/inside-church.JPG') no-repeat center center/cover;
-    height: 62vh;
+    background: url('../img/inside-church-centered.JPG') no-repeat center center/cover;
+    height: 92vh;
+    display: flex;
 }
 
 #contact-showcase .contact-showcase-content {
     color: #fff;
     text-align: center;
-    padding-top: 170px;
 }
 
 #contact-showcase .contact-showcase-content h2 {
-    font-size: 3.6vh;
+    font-size: 4.0vh;
     line-height: 1.2em;
     padding-bottom: 60px;
 }
@@ -631,8 +646,7 @@ p {
 @import url(https://fonts.bunny.net/css?family=amita:700);
 
 .gallery {
-    background: url(https://res.cloudinary.com/ritalbradley/image/upload/v1657644013/pexels-elijah-o_donnell-3473569_o7ohfd.jpg)
-        center center/cover no-repeat;
+    background: url(https://res.cloudinary.com/ritalbradley/image/upload/v1657644013/pexels-elijah-o_donnell-3473569_o7ohfd.jpg) center center/cover no-repeat;
     min-height: 100vh;
     display: -webkit-flex;
     display: flex;
@@ -679,80 +693,127 @@ p {
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 
 #schedule p {
-	margin: 0;
-	line-height: 1.6;
+    margin: 0;
+    line-height: 1.6;
 }
 
 #schedule ol {
-	list-style: none;
-	counter-reset: list;
-	padding: 0 1rem;
+    list-style: none;
+    counter-reset: list;
+    padding: 0 1rem;
 }
 
 #schedule li {
-	--stop: calc(100% / var(--length) * var(--i));
-	--l: 62%;
-	--l2: 88%;
-	--h: calc((var(--i) - 1) * (180 / var(--length)));
-	--c1: hsl(var(--h), 71%, var(--l));
-	--c2: hsl(var(--h), 71%, var(--l2));
-	
-	position: relative;
-	counter-increment: list;
-	max-width: 45rem;
-	margin: 2rem auto;
-	padding: 2rem 1rem 1rem;
-	box-shadow: 0.1rem 0.1rem 1.5rem rgba(0, 0, 0, 0.3);
-	border-radius: 0.25rem;
-	overflow: hidden;
-	background-color: white;
+    --stop: calc(100% / var(--length) * var(--i));
+    --l: 62%;
+    --l2: 88%;
+    --h: calc((var(--i) - 1) * (180 / var(--length)));
+    --c1: hsl(var(--h), 71%, var(--l));
+    --c2: hsl(var(--h), 71%, var(--l2));
+
+    position: relative;
+    counter-increment: list;
+    max-width: 45rem;
+    margin: 2rem auto;
+    padding: 2rem 1rem 1rem;
+    box-shadow: 0.1rem 0.1rem 1.5rem rgba(0, 0, 0, 0.3);
+    border-radius: 0.25rem;
+    overflow: hidden;
+    background-color: white;
 }
 
 #schedule li::before {
-	content: '';
-	display: block;
-	width: 100%;
-	height: 1rem;
-	position: absolute;
-	top: 0;
-	left: 0;
-	background: linear-gradient(to right, var(--c1) var(--stop), var(--c2) var(--stop));
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, var(--c1) var(--stop), var(--c2) var(--stop));
 }
 
 #schedule h3 {
-	display: flex;
-	align-items: baseline;
-	margin: 0 0 1rem;
-	color: rgb(70 70 70);
+    display: flex;
+    align-items: baseline;
+    margin: 0 0 1rem;
+    color: rgb(70 70 70);
 }
 
 #schedule h3::before {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex: 0 0 auto;
-	margin-right: 1rem;
-	width: 3rem;
-	height: 3rem;
-	content: counter(list);
-	padding: 1rem;
-	border-radius: 50%;
-	background-color: var(--c1);
-	color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+    margin-right: 1rem;
+    width: 3rem;
+    height: 3rem;
+    content: counter(list);
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: var(--c1);
+    color: white;
 }
 
 @media (min-width: 40em) {
-	#schedule li {
-		margin: 3rem auto;
-		padding: 3rem 2rem 2rem;
-	}
-	
-	#schedule h3 {
-		font-size: 2.25rem;
-		margin: 0 0 2rem;
-	}
-	
-	#schedule h3::before {
-		margin-right: 1.5rem;
-	}
+    #schedule li {
+        margin: 3rem auto;
+        padding: 3rem 2rem 2rem;
+    }
+
+    #schedule h3 {
+        font-size: 2.25rem;
+        margin: 0 0 2rem;
+    }
+
+    #schedule h3::before {
+        margin-right: 1.5rem;
+    }
+}
+
+.family {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 columns */
+    grid-auto-rows: minmax(150px, 1fr);
+    /* 2 rows scale responsively */
+    gap: 4em;
+    padding: 8em;
+    pointer-events: none;
+    background-color: rgba(51, 51, 51, 0.8);
+}
+
+.family img {
+    width: 100%;
+    /* fill the grid cell width */
+    height: 100%;
+    /* fill the grid cell height */
+    object-fit: cover;
+    /* maintain aspect ratio, crop if needed */
+    object-position: center;
+    border-radius: 0.25em;
+    transition: 400ms 50ms;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.family:hover img:not(:hover) {
+    filter: saturate(0.2) opacity(0.5);
+}
+
+/* Optional: make grid scale on smaller screens */
+@media (max-width: 1200px) {
+    .family {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns instead of 4 */
+    }
+}
+
+@media (max-width: 700px) {
+    .family {
+        grid-template-columns: 1fr;
+        /* 1 column on mobile */
+        gap: 2em;
+        padding: 3em 4em;
+    }
 }

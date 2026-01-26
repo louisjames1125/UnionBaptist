@@ -39,12 +39,18 @@ p {
 button, a, input, textarea {
     -webkit-tap-highlight-color: transparent; /* No highlight */
     -webkit-touch-callout: none; /* Prevent long-press menu (optional) */
+    pointer-events: auto;
+    touch-action: manipulation;
 }
 
 /* Ensure button text color inherits from parent */
 button {
     color: inherit; /* Prevent iOS from forcing blue text */
     background-color: inherit; /* Optional: keep background consistent */
+}
+
+section {
+  min-height: -webkit-fill-available;
 }
 
 /* Utilities
